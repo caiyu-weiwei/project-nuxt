@@ -1,4 +1,7 @@
 module.exports = {
+  css: [
+    '@/assets/css/normailze.css'
+  ],
   /*
   ** Headers of the page
   */
