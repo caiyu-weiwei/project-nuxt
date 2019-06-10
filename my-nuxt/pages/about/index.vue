@@ -1,16 +1,18 @@
 <template>
   <div>
+    <h2>About Index Page</h2>
     <ul>
       <li><nuxt-link :to="{name: 'index'}">Home</nuxt-link></li>
-      <li><nuxt-link :to="{name: 'news'}">News</nuxt-link></li>
-      <li><nuxt-link :to="{name: 'about', params: {id: 123}}">About</nuxt-link></li>
     </ul>
+    <h2>{{$route.params.id}}</h2>
   </div>
 </template>
 
 <script>
   export default {
-    
+    data() {
+      return {}
+    }
   }
 </script>
 
