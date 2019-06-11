@@ -8,7 +8,10 @@
 
 <script>
   export default {
-    
+    validate({ params }) {
+      return /^\d+$/.test(params.newsId)
+      // return new Promisse(resolve => setTimeout(() => resolve()))
+    }
   }
 </script>
 
