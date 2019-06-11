@@ -1,0 +1,12 @@
+.page-enter-active,
+.page-leave-active{
+  transition: opacity 2s;
+  -webkit-transition: opacity 2s;
+  -moz-transition: opacity 2s;
+  -ms-transition: opacity 2s;
+  -o-transition: opacity 2s;
+}
+.page-enter,
+.page-leave{
+  opacity: 0;
+}
