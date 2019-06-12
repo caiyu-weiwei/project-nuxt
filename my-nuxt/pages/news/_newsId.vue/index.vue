@@ -11,6 +11,19 @@
     validate({ params }) {
       return /^\d+$/.test(params.newsId)
       // return new Promisse(resolve => setTimeout(() => resolve()))
+    },
+    data() {
+      return {
+        title: this.$route.params.title
+      }
+    },
+    head() {
+      return {
+        title: this.title,
+        meta: [
+          { hid: 'description', name: 'news', content: '这是新闻详情页' }
+        ]
+      }
     }
   }
 </script>
