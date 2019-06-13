@@ -1,4 +1,19 @@
+import axios from 'axios'
 module.exports = {
+  // generate: {
+  //   routes: function() {
+  //     return axios.get('https://api.myjson.com/bins/lecht')
+  //       .then(res => {
+  //         console.log('routes res', res)
+  //         return res.news.map(news => {
+  //           return {
+  //             route: '/news/' + news.id,
+  //             payload: news
+  //           }
+  //         })
+  //       })
+  //   }
+  // },
   css: [
     '@/assets/css/normailze.css',
     '@/assets/css/main.css'

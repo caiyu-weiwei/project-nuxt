@@ -24,6 +24,11 @@
           { hid: 'description', name: 'news', content: '这是新闻详情页' }
         ]
       }
+    },
+    asyncData({params, error, payload}) {
+      console.log('params', params)
+      console.log('error', error)
+      console.log('payload', payload)
     }
   }
 </script>
