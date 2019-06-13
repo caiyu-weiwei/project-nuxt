@@ -10,7 +10,7 @@
 </template>
 
 <script>
-  import axios from 'axios'
+  import axios from '@/plugins/axios'
   export default {
     async asyncData() {
       let { data } = await axios.get('https://api.myjson.com/bins/192r81')
